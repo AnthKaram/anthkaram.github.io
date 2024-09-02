@@ -38,6 +38,11 @@
 }
 .navbar-toggler{
     border: none;
+    width: fit-content;
+}
+.navbar-toggler:focus{
+    border:none;
+    box-shadow: none;
 }
 
 
