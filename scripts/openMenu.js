@@ -1,17 +1,16 @@
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu
 */
+click = true;
 function openMenu(){
-    var x =
-    document.getElementById("links");
     let button =
     document.getElementById("menuButton");
 
-    if (x.style.display === "grid") {
-        x.style.display = "none";
+    if (click === true) {
         button.innerHTML='&#9776;';
+        click = false;
         
     } else {
-        x.style.display = "grid";
         button.innerHTML='&#10005;';
+        click=true;
     }
 }
