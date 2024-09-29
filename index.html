@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="/general.css">
 <link rel="stylesheet" href="/home.css">
 
+<script src="https://kit.fontawesome.com/cdd3f4df98.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <nav class="navbar navbar-expand-sm fixed-top">
@@ -47,14 +49,24 @@
 
   <!--welcome video-->
   <div style="display: grid; grid-template-columns: 50% auto; margin-top:56px">
-    <video width="100%" autoplay loop playsinline muted>
-      <source src="K&F launching video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+      <video width="100%" autoplay loop playsinline muted id="myVideo" onclick="toggleMute()">
+        <source src="K&F launching video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     <div style="background-image: url('/option2slogan.png'); background-size: 100%; position: relative; text-align: center;">
       <button id="learn-more">Learn More</button>
     </div>
   </div>
+  <!--mute/unmute feature-->
+  <script>
+    function toggleMute() {
+        var video = document.getElementById('myVideo');
+        var button = document.getElementById('muteButton');
+
+        video.muted = !video.muted;
+        button.textContent = video.muted ? 'Unmute' : 'Mute';
+    }
+</script>
 
 
 
