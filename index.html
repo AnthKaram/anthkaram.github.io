@@ -16,10 +16,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <link rel="stylesheet" href="/general.css">
+<link rel="stylesheet" href="/home.css">
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm">
+  <nav class="navbar navbar-expand-sm fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="javascript:void(0)"><img src="logo.png" class="logo"></a>
         <a href="javascript:void(0);" class="icon navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -43,6 +44,19 @@
       </div>
     </div>
   </nav>
+
+  <!--welcome video-->
+  <div style="display: grid; grid-template-columns: 50% auto; margin-top:56px">
+    <video width="100%" controls autoplay muted>
+      <source src="K&F launching video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div style="background-image: url('/option2slogan.png'); background-size: 100%; position: relative; text-align: center;">
+      <button id="learn-more">Learn More</button>
+    </div>
+  </div>
+
+
 
 <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" style="padding: 0px 100px;">
   <div class="carousel-inner">
