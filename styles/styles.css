@@ -84,6 +84,7 @@ body{
 }
 
 #learn-more{
+  border-radius: 5px;
   bottom: 0; 
   left: 50%; 
   position: absolute;  
