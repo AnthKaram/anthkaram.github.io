@@ -8,8 +8,6 @@
   border-left:none;
   border-right:none;
   border-color:rgb(25, 172, 180);
-
-  height:56px;
 }
 
 .logo{
@@ -72,15 +70,38 @@ body{
 }
 
 /*Home*/
-.partners{
-  margin-top: 100px;
+.video-slogan-div{
+  display: grid; 
+  grid-template-columns: 50% auto; 
+  margin-top:56px;
 }
 
-#partners-text{
-  margin-left: 25px;
-  font-weight: bold;
-  font-size: 32px;
-  font-style: italic;
-  margin-bottom: 0px;
-  color:rgb(25, 172, 180)
+#slogan{
+  background-image: url('/images/slogan.png'); 
+  background-size: 100%; 
+  position: relative; 
+  text-align: center;
+}
+
+#learn-more{
+  border-radius: 5px;
+  bottom: 0; 
+  left: 50%; 
+  position: absolute;  
+  -ms-transform: translate(-50%, 0%);  
+  transform: translate(-50%, 0%); 
+  width: 100px; 
+  color: rgb(255, 255, 255); 
+  background-color:rgb(25, 172, 180); 
+  border-color:rgb(89, 89, 91); 
+  font-weight: bold; 
+  border-style: solid; 
+  padding: 5px 15px; 
+  font-size: 12px; 
+  transition: all 0.2s; 
+  cursor: pointer;
+}#learn-more:hover { 
+    opacity:85%;
+}#learn-more:active{
+  opacity: 60%;
 }

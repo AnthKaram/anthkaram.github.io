@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale= 1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Tab Bar -->
   <title>JK Sound Revolution</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
 
-  <!-- Latest compiled and minified CSS for Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS for Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Latest compiled JavaScript for Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Latest compiled JavaScript for Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/styles/styles.css">
+<!-- CSS -->
+<link rel="stylesheet" href="/styles/styles.css">
 
-  <!-- JS -->
-  <script src="/scripts/toggleMute.js"></script>
+<!-- JS -->
+<script src="/scripts/toggleMute.js"></script>
 </head>
 
 <body>
@@ -50,40 +50,41 @@
   </nav>
 
   <!-- Welcome Video / Slogan -->
-  <img src="/images/slogan.png" style="width:100%; margin-top:56px;">
-  <video width="100%" autoplay loop playsinline muted id="myVideo" onclick="toggleMute()">
-      <source src="/videos/K&F launching video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
+  <div class="video-slogan-div">
+      <video width="100%" autoplay loop playsinline muted id="myVideo" onclick="toggleMute()">
+        <source src="/videos/K&F launching video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    <div id="slogan">
+      <a href="pages/about.html"><button id="learn-more">Learn More</button></a>
+    </div>
+  </div>
 
   <!-- Partners -->
-   <div class="partners">
-     <p id="partners-text">Our Partners</p>
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" style="padding: 0px 100px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/partners/partners-1.png" class="d-block w-100" alt="KLING&FREITAG DIGICO MIDAS">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/partners/partners-2.png" class="d-block w-100" alt="YAMAHA PIONEER NEUMANN">
+      </div>
+      <div class="carousel-item">
+        <img src="images/partners/partners-3.png" class="d-block w-100" alt="DPA SENNHEISER SHURE">
+      </div>
+      <div class="carousel-item">
+        <img src="images/partners/partners-4.png" class="d-block w-100" alt="RODE">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-     <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" style="padding: 0px 100px;">
-       <div class="carousel-inner">
-         <div class="carousel-item active">
-           <img src="/images/partners/partners-1.png" class="d-block w-100" alt="KLING&FREITAG DIGICO MIDAS">
-         </div>
-         <div class="carousel-item">
-           <img src="/images/partners/partners-2.png" class="d-block w-100" alt="YAMAHA PIONEER NEUMANN">
-         </div>
-         <div class="carousel-item">
-           <img src="images/partners/partners-3.png" class="d-block w-100" alt="DPA SENNHEISER SHURE">
-         </div>
-         <div class="carousel-item">
-           <img src="images/partners/partners-4.png" class="d-block w-100" alt="RODE">
-         </div>
-       </div>
-       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-         <span class="visually-hidden">Previous</span>
-       </button>
-       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-         <span class="visually-hidden">Next</span>
-       </button>
-     </div>
-   </div>
 </body>
 </html>
