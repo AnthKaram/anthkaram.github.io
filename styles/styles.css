@@ -77,10 +77,8 @@ body{
 }
 
 #slogan{
-  background-image: url('/images/slogan.png'); 
-  background-size: 100%; 
-  position: relative; 
-  text-align: center;
+  margin-top: 56px;
+  width: 100%;
 }
 
 #learn-more{
